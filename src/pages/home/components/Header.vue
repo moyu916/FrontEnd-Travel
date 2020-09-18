@@ -32,6 +32,7 @@ export default {
         position: fixed;
         top: 0;
         color: #fff;
+        z-index: 2;
     }
     .header-left {
         float: left;
