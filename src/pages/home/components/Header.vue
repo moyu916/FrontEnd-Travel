@@ -36,44 +36,46 @@ export default {
     .header-left {
         float: left;
         width: .6rem;
-
     }
     .header-right {
+        box-sizing: border-box;
         float: right;
         width: 1.24rem;
         line-height: .86rem;
-        text-align: left;
-        padding-left: .05rem;
-    }
-    .iconfont {
-        font-size: .5rem;
+        padding-right: .3rem;
     }
     .icon-arrow-left {
        text-align: center;
        line-height: .86rem;
+       font-size: .5rem;
     }
     .icon-list {
         position: absolute;
+        right: 0;
         line-height: .86rem;
         font-size:.6rem;
     }
     .icon-search{
         position: absolute;
-        left: .28rem;
-        top:.16rem;
+        left: .18rem;
+        top:.24rem;
         color: #ccc;
+        font-size: .38rem;
     }
     .header-mid {
+        box-sizing: border-box;
+        padding: .1rem .1rem;
         flex: 1;
         position: relative;
     }
     .header-mid input {
-        height: calc(100% - 0.2rem);
-        width: calc(100% - .6rem);
+        display: block;
+        box-sizing: border-box;
+        padding-left: .5rem;
+        height: 100%;
+        width: 100%;
         color:#ccc;
         border-radius:.06rem;
-        margin-top: .1rem;
-        padding-left:.6rem;
     }
 
 </style>
