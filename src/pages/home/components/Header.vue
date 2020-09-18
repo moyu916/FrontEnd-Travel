@@ -8,7 +8,7 @@
             <input type="text" value="输入城市/景点/游玩主题">
         </div>
         <div class="header-right">
-            大连
+            {{this.city}}
             <span class="iconfont icon-list">&#xe6a4;</span>
         </div>
     </div>
@@ -16,7 +16,10 @@
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props: {
+    city: String
+  }
 }
 </script>
 
@@ -43,13 +46,11 @@ export default {
         padding-left: .05rem;
     }
     .iconfont {
-        color:#fff;
         font-size: .5rem;
     }
     .icon-arrow-left {
        text-align: center;
        line-height: .86rem;
-        
     }
     .icon-list {
         position: absolute;
@@ -58,20 +59,18 @@ export default {
     }
     .icon-search{
         position: absolute;
-        left:0;
+        left: .28rem;
         top:.16rem;
-        color: #ddd;
-
+        color: #ccc;
     }
     .header-mid {
         flex: 1;
         position: relative;
-        
     }
     .header-mid input {
         height: calc(100% - 0.2rem);
         width: calc(100% - .6rem);
-        color:#ddd;
+        color:#ccc;
         border-radius:.06rem;
         margin-top: .1rem;
         padding-left:.6rem;
