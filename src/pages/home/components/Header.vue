@@ -7,10 +7,12 @@
             <span class="iconfont icon-search">&#xe6a2;</span>
             <input type="text" value="输入城市/景点/游玩主题">
         </div>
-        <div class="header-right">
-            {{this.city}}
-            <span class="iconfont icon-list">&#xe6a4;</span>
-        </div>
+        <router-link to="/city">
+            <div class="header-right">
+                {{this.city}}
+                <span class="iconfont icon-list">&#xe6a4;</span>
+            </div>
+        </router-link>
     </div>
 </template>
 
@@ -44,6 +46,7 @@ export default {
         width: 1.24rem;
         line-height: .86rem;
         padding-right: .3rem;
+        color: #fff;
     }
     .icon-arrow-left {
        text-align: center;

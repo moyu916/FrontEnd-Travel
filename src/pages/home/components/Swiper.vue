@@ -36,6 +36,7 @@ export default {
         height: 0; //31.25%是相对于父元素的高度，而非自身宽度
         padding-bottom: 31.25% */
         height: 31.25vw;
+        margin-top: .86rem;
 
     }
     .swiper-img {
