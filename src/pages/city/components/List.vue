@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import BetterScroll from 'better-scroll'
+import BScroll from 'better-scroll'
 export default {
     name: 'CityList',
     props: {
@@ -37,7 +37,7 @@ export default {
         letter: String
     },
     mounted () {
-        this.scroll = new BetterScroll(this.$refs.wrapper) 
+        this.scroll = new BScroll(this.$refs.wrapper) 
     },
     watch: {
         letter () {
