@@ -33,9 +33,9 @@ export default {
       },
       getDetailInfoSucc (res) {
           res = res.data
-          //console.log(res.data)
-          //console.log(res.ret)
-          if(res.ret && res.data) {
+          // console.log(res.data)
+          // console.log(res.ret)
+          if (res.ret && res.data) {
               this.sightName = res.data.sightName
               this.bannerImg = res.data.bannerImg
               this.gallaryImgs = res.data.gallaryImgs

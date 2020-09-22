@@ -1,6 +1,16 @@
 <template>
   <div class="header">
-      <router-link tag="div" to="/" class="header-abs"><span class="iconfont icon-arrow-left" v-show="showAbs">&#xe743;</span></router-link>
+
+      <router-link 
+        tag="div" 
+        to="/" 
+        class="header-abs"
+      >
+        <span class="iconfont icon-arrow-left" v-show="showAbs">
+            &#xe743;
+        </span>
+      </router-link>
+
       <div class="header-fixed" v-show="!showAbs" :style="opacityStyle">
         <router-link to="/">
             <span class="iconfont header-fixed-back">&#xe743;</span>
@@ -37,10 +47,10 @@ export default {
       }
   },
   activated () {
-      window.addEventListener('scroll',this.handleScroll)
+      window.addEventListener('scroll', this.handleScroll)
   },
   deactivated () {
-      window.removeEventListener('scroll',this.handleScroll)
+      window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
@@ -80,5 +90,4 @@ export default {
         font-size: .4rem ;
         color: #fff;
     }
-
 </style>

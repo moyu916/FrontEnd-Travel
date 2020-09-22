@@ -41,7 +41,7 @@ export default {
             .then(this.getCityInfoSucc)
         },
         getCityInfoSucc (res) {
-            //console.log(res)
+            // console.log(res)
             res = res.data
             if(res.ret && res.data) {
               this.cities = res.data.cities
@@ -51,7 +51,7 @@ export default {
         },
         handleLetterChange (letter) {
             this.letter = letter
-            //console.log(this.letter)
+            // console.log(this.letter)
         }       
     },
     mounted () {

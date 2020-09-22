@@ -19,8 +19,8 @@ Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
-  store,
+  router, // 对象
+  store,  // 对象 store: store
   components: { App },
   template: '<App/>'
 })

@@ -22,9 +22,9 @@ export default {
   computed: {
     pages () {
         const pages = []
-        this.icons.forEach((item,index)=>{
-            const page = Math.floor(index/8)
-            if(!pages[page]){
+        this.icons.forEach((item, index) => {
+            const page = Math.floor(index / 8)
+            if (!pages[page]) {
                 pages[page] = []
             }
             pages[page].push(item)
@@ -75,5 +75,4 @@ export default {
         text-overflow: ellipsis;
         text-align: center;
     }
-
 </style>

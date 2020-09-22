@@ -5,10 +5,10 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        city: localStorage.city||'上海'
+        city: localStorage.city || '上海'
     },
     actions: {
-        changeCity (ctx,city) {
+        changeCity (ctx, city) {
             ctx.commit('changeCity',city)
         }
     },

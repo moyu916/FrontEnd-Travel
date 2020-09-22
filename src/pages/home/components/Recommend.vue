@@ -2,7 +2,13 @@
     <div class="recommend">
         <div class="title">热销推荐</div>
         <ul>
-            <router-link tag="li" class="item boeder-bottom" v-for="item of recommend" :key="item.id" :to="'/detail/'+item.id">
+            <router-link 
+              tag="li" 
+              class="item boeder-bottom" 
+              v-for="item of recommend" 
+              :key="item.id" 
+              :to="'/detail/'+item.id"
+            >
                 <div class="img-wrapper">
                     <img :src="item.imgUrl" alt="">
                 </div>
@@ -18,7 +24,7 @@
 
 <script>
 export default {
-    name: "HomeRecommend",
+    name: 'HomeRecommend',
     props: {
         recommend: Array
     }
@@ -61,5 +67,4 @@ export default {
         border-radius: .06rem;
         font-size: .12rem;
     }
-
 </style>

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <HomeHeader></HomeHeader>
-    <HomeSwiper :list="swiperList"></HomeSwiper>
-    <HomeIcons :icons="iconList"></HomeIcons>
-    <HomeRecommend :recommend="recommendList"></HomeRecommend>
-    <HomeWeekend :weekend="weekendList"></HomeWeekend>
+    <home-header></home-header>
+    <home-swiper :list="swiperList"></home-swiper>
+    <home-icons :icons="iconList"></home-icons>
+    <home-recommend :recommend="recommendList"></home-recommend>
+    <home-weekend :weekend="weekendList"></home-weekend>
   </div>
 </template>
 
@@ -42,7 +42,7 @@ export default {
     },
     getHomeInfoSucc (res) {
       res = res.data
-      console.log(res.ret)
+      // console.log(res.ret)
       if (res.ret && res.data) {
         this.swiperList = res.data.swiperList
         this.iconList = res.data.iconList

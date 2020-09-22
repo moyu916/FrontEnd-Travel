@@ -26,7 +26,7 @@ export default {
       return {
           swiperOptions: {
               pagination: '.swiper-pagination',
-              //paginationType: 'fraction'
+              paginationType: 'fraction',
               observeParents: true,
               observer: true
           }
